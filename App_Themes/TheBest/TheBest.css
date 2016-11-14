@@ -1,0 +1,33 @@
+﻿html { height: 100%; }
+
+body {
+    background-color: #7C6F57;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    background: transparent;
+    color: #3366ff;
+}
+
+#main {
+    background: #FFFFFF;
+    color: #444422;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1085px;
+}
+
+#footer {
+    background: #FFFFFF url('Images/FooterBack.png') repeat;
+    border-color: #54504F;
+    color: #5F564F;
+}
+
+#logo {
+    background-image: url('Images/Logo.png');
+    border-color: #54504F;
+    color: #5F564F;
+    height: 163px;
+}

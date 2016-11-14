@@ -1,0 +1,20 @@
+﻿<%--
+This is the default skin for the website "World Great Jobs" Server Controls
+Take note .skin file is used to be the theming for the server controls in ASP.Net
+--%>
+
+<asp:Label Runat="server" ForeColor="#004000" Font--Names="Verdana"
+           Font-Size="X-Small"/>
+
+<asp:Textbox Runat="server" ForeColor="#004000"
+             Font--Names="Verdana"
+             Font-Size="X-Small" BorderStyle="Solid"
+             BorderWidth="1px"
+             BorderColor="#004000" Font--Bold="True"/>
+
+<asp:Button Runat="server" ForeColor="#004000"
+            Font--Names="Verdana"
+            Font-Size="X-Small" BorderStyle="Solid"
+            BorderWidth="1px"
+            BorderColor="#004000" Font--Bold="True"
+            BackColor="#FFE0C0"/>

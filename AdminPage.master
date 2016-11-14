@@ -1,0 +1,163 @@
+﻿<%@ Master Language="VB" CodeFile="AdminPage.master.vb" Inherits="AdminPage" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>World's Top Jobs</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <!-- **** TheBest scheme stylesheet **** -->
+    <link rel="stylesheet" type="text/css" href="App_Themes/TheBest/TheBest.css"/>
+
+    <style type="text/css">
+        .style1 {
+            border-style: solid;
+            height: 501px;
+            width: 100%;
+        }
+
+        .style3 { height: 102px; }
+
+        .style12 {
+            height: 10px;
+            text-align: left;
+        }
+
+        .style13 {
+            border-left-style: solid;
+            border-left-width: 1px;
+            height: 445px;
+            padding: 1px 4px;
+            text-align: left;
+            width: 1px;
+        }
+
+        .style15 { height: 445px; }
+
+        .style16 {
+            height: 445px;
+            text-align: left;
+            width: 817px;
+        }
+    </style>
+</head>
+<body style="margin-left: 85px; margin-right: 90px">
+<form id="form1" runat="server" style="clip: rect(auto, 100px, auto, auto)">
+    <input type="hidden" name="ie" value="ISO-8859-1"/>
+    <input type="hidden" name="cx" value="partner-pub-6117189793139943:ewokd8dfah7"/>
+    <input value="-----BEGIN PKCS7-----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-----END PKCS7-----
+         " name="encrypted" type="hidden"/>
+    <input value="_s-xclick" name="cmd" type="hidden"/>
+
+    <asp:ScriptManager ID="ScriptManager1" runat="server"/>
+    <div id="main">
+        <table class="style1"
+               style="border-color: #000000; height: 761px; width: 1080px;">
+            <!-- MSTableType="layout" -->
+            <tr>
+                <td class="style3" colspan="4" style="height: 167px">
+                    <asp:HyperLink ID="hlBanner" runat="server" Height="167px"
+                                   ImageUrl="~/Images/Banner.png" Width="1077px">
+                    </asp:HyperLink>
+                </td>
+            </tr>
+            <tr>
+                <td class="style12" colspan="4" style="height: 21px">
+                    <div style="border-bottom-style: solid; border-top-style: solid; text-align: right; width: 1076px;">
+                        <asp:LoginName ID="LoginName1" Runat="server" Font-Bold="True"
+                                       FormatString="Welcome {0} !"/>
+                        &nbsp;<asp:LoginStatus ID="LoginStatus1" runat="server"
+                                               LogoutPageUrl="~/Default.aspx" style="color: #669999" ForeColor="Blue"/>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="style15" valign="top">
+                    <div style="height: 368px; width: 155px;">
+                        <br/>
+                        Administration<asp:Menu
+                                          id="mnMember" runat="server"
+                                          DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.8em"
+                                          ForeColor="#7C6F57" StaticSubMenuIndent="10px" Height="156px"
+                                          Width="135px">
+                            <StaticSelectedStyle BackColor="#5D7B9D"/>
+                            <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px"/>
+                            <DynamicHoverStyle BackColor="#7C6F57" ForeColor="White"/>
+                            <DynamicMenuStyle BackColor="#F7F6F3"/>
+                            <DynamicSelectedStyle BackColor="#5D7B9D"/>
+                            <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px"/>
+                            <StaticHoverStyle BackColor="#7C6F57" ForeColor="White"/>
+                            <Items>
+                                <asp:MenuItem NavigateUrl="~/Admin/Default.aspx" Text="Home" Value="Home">
+                                </asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Admin/ApplicationStatus.aspx"
+                                              Text="Application Status" Value="Application Status">
+                                </asp:MenuItem>
+                                <asp:menuitem Text="Education Level" Value="Education Level"
+                                              NavigateUrl="~/Admin/EducationLevelsManager.aspx">
+                                </asp:menuitem>
+                                <asp:menuitem Text="Experience Level" Value="Experience Level"
+                                              NavigateUrl="~/Admin/ExperienceLevelManager.aspx">
+                                </asp:menuitem>
+                                <asp:menuitem Text="Country" Value="Country"
+                                              NavigateUrl="~/Admin/CountryManager.aspx">
+                                </asp:menuitem>
+                                <asp:MenuItem NavigateUrl="~/Admin/StateManager.aspx" Text="State"
+                                              Value="State">
+                                </asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Admin/JobCategoryManager.aspx" Text="Job Category"
+                                              Value="Job Category">
+                                </asp:MenuItem>
+                            </Items>
+                        </asp:Menu>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                    </div>
+                    <br/>
+                </td>
+                <td class="style13">
+                </td>
+                <td class="style16" valign="top">
+                    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                        <p style="height: 20px; width: 836px;">
+                            &nbsp;
+                        </p>
+                    </asp:ContentPlaceHolder>
+                    <br/>
+                    <br/>
+                </td>
+                <td class="style15">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4" align="center"
+                    style="border-top-style: solid; font-family: Verdana; font-size: x-small; height: 78px;">
+                    <div id="footer" style="height: 108px">
+                        <br/>
+                        <br/>
+                        Copyright (C) 2010 World&#39;s Top Jobs
+                        <br/>
+                        <br/>
+                        <asp:HyperLink ID="lnkWebmaster" Runat="server" BackColor="White" BorderColor="#339933"
+                                       NavigateUrl="http://vpdejesus.tech.officelive.com" ForeColor="Blue">
+                            Contact Administrator
+                        </asp:HyperLink>
+                        <br/>
+                        <br/>
+                        <div style="height: 34px">
+                            <a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4a963ad92f2f3114">
+                                <img width="125" alt="Bookmark and Share" style="border: 0" src="http://s7.addthis.com/static/btn/v2/lg-share-en.gif" height="16"/>
+                            </a><script src="http://s7.addthis.com/js/250/addthis_widget.js?pub=xa-4a963ad92f2f3114" type="text/javascript"></script>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</form>
+</body>
+</html>
